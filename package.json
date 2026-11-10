@@ -1,0 +1,14 @@
+{
+  "name": "test-repository",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A TypeScript hello world with no dependencies: Node runs the .ts files directly.",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node src/main.ts",
+    "test": "node --test"
+  }
+}
