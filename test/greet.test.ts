@@ -13,3 +13,19 @@ test('greets a name', () => {
 test('treats a blank name as no name', () => {
   assert.equal(greet('   '), 'Hello, world!')
 })
+
+test('greets two names', () => {
+  assert.equal(greet('Ada', 'Grace'), 'Hello, Ada and Grace!')
+})
+
+test('greets three names without an Oxford comma', () => {
+  assert.equal(greet('Ada', 'Grace', 'Linus'), 'Hello, Ada, Grace and Linus!')
+})
+
+test('trims names and drops blank ones', () => {
+  assert.equal(greet('  Ada ', '', '   '), 'Hello, Ada!')
+})
+
+test('greets the world when all names are blank', () => {
+  assert.equal(greet('', '   '), 'Hello, world!')
+})
