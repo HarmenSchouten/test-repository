@@ -5,6 +5,7 @@ A TypeScript hello world with no dependencies and no build step. Node 24 runs th
 ```sh
 npm start          # Hello, world!
 npm start -- Ada   # Hello, Ada!
+npm start -- ada   # Hello, Ada! (first letter is capitalised)
 npm start -- Ada Grace Linus   # Hello, Ada, Grace and Linus!
 npm test           # node --test, runs test/*.test.ts
 ```
