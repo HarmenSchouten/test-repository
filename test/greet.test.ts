@@ -29,3 +29,20 @@ test('trims names and drops blank ones', () => {
 test('greets the world when all names are blank', () => {
   assert.equal(greet('', '   '), 'Hello, world!')
 })
+
+test('capitalises a lower-case name', () => {
+  assert.equal(greet('ada'), 'Hello, Ada!')
+})
+
+test('capitalises each of several names', () => {
+  assert.equal(greet('ada', 'grace'), 'Hello, Ada and Grace!')
+})
+
+test('capitalises a non-ASCII first letter', () => {
+  assert.equal(greet('élodie'), 'Hello, Élodie!')
+})
+
+test('leaves the rest of the name as typed', () => {
+  assert.equal(greet('McDonald'), 'Hello, McDonald!')
+  assert.equal(greet("o'brien"), "Hello, O'brien!")
+})
