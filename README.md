@@ -7,6 +7,7 @@ npm start          # Hello, world!
 npm start -- Ada   # Hello, Ada!
 npm start -- ada   # Hello, Ada! (first letter is capitalised)
 npm start -- Ada Grace Linus   # Hello, Ada, Grace and Linus!
+npm start -- --shout Ada Grace   # HELLO, ADA AND GRACE! (--shout can go anywhere)
 npm test           # node --test, runs test/*.test.ts
 ```
 
