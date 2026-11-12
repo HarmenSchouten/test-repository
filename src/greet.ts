@@ -15,3 +15,7 @@ export function greet(...names: string[]): string {
       : `${list.slice(0, -1).join(', ')} and ${list[list.length - 1]}`
   return `Hello, ${who}!`
 }
+
+export function shout(...names: string[]): string {
+  return greet(...names).toUpperCase()
+}
